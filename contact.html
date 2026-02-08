@@ -334,29 +334,13 @@
       </div>
     </section>
   </main>
-  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+
 <script>
-(function(){
-  emailjs.init("LJL9PT8gFY5GoTJFn");
-})();
+    <!-- Optional: tiny script for year or future features -->
 
-document.getElementById("contactForm").addEventListener("submit", function(e){
-  e.preventDefault();
-
-  emailjs.send("service_a8vx1zm", "
-__ejs-test-mail-service__", {
-    name: name.value,
-    email: email.value,
-    subject: subject.value,
-    message: message.value
-  }).then(() => {
-    alert("Message sent!");
-    this.reset();
-  });
-});
 </script>
 
-  <!-- Optional: tiny script for year or future features -->
+
  
 </body>
 </html>
